@@ -1,5 +1,4 @@
 # ETW2SQLite
-======================
 
 ETW2SQLite is a tool that converts ETW Log Files (.ETL) to a SQLite database. A table is created per unique event type and each events is added as rows of this table. For each "flat" property in the event, a column is created matching the closest SQLite type, and for "structs" and "arrays" the information is encoded as JSON (using the Newtonsoft.Json library) and stored with the remaining properties.
 
